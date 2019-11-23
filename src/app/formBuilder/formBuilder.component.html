@@ -1,0 +1,11 @@
+<h1>dddd</h1>
+
+
+
+<form action=""[formGroup]="studentModel"(ngSubmit)="saveAction(studentModel.value)">
+    <input type="text" class="form-control" placeholder="enter your first name"  formControlName="firstname"><br>
+    <input type="text" class="form-control" placeholder="enter your last name"  formControlName="lastname"><br>
+    <input type="email" class="form-control" placeholder="enter your email"  formControlName="email"><br>
+    <input type="text" class="form-control" placeholder="contact"  formControlName="contact"><br>
+    <button type="submit" class="btn btn-danger">submit</button>
+</form>

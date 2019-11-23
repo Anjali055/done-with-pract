@@ -1,0 +1,187 @@
+<div class="row">
+<div class="col-sm-2"></div> 
+
+    <div class="col fixed">
+        <img src="assets/naukri_Logo.png" alt="imgnot found">
+    </div>
+
+    <div class="col-sm-8 alreadyReg">
+            <!-- <p ng-if="!header.email && !header.profile">Already Registered? <a ng-href="https://login.naukri.com/" ng-click="track.eventTrackGA('click','Login_BasicDetails')" class="primary-link" title="Jobseeker Login">Login</a> here</p>
+     -->
+    
+        <p>Already Registered?&nbsp;&nbsp;<a href="#">Login here</a></p>
+    </div>
+
+</div>
+
+<br><br><br>
+
+<div class="row">
+
+<div class="col">
+
+        <nav class=" navbar navbar-expand-lg bg-dark navbar-dark justify-content-center">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Personal</a>
+                    </li>
+
+                    <li class="nav-item">
+                            <a class="nav-link" href="" >Education</a>
+                        </li>
+                   
+            
+                </ul>
+            
+        </nav>
+</div>
+
+</div>
+
+
+<br>
+
+
+<div class="container">
+        <!-- <div class="row">
+                 <div class="col-sm-4"></div>
+            
+                <div class="col-sm-5">
+
+                    <label for="Uname" class="col-sm-2">Name</label>
+                    <input type="text" id="Uname"  placeholder="Enter Your Full Name">
+                
+                </div>
+
+         </div> -->
+
+
+         
+         <div class="row">
+              
+            
+             
+                <label  for="name" class=" right mandatory col-sm-2">Name</label>
+                <input type="text" id="Uemail"  class="form-control" class="col-sm-6" placeholder="Enter Your FullName">
+
+        </div>
+
+<br>
+         <div class="row ">
+                <label for="Uemail" class="right mandatory col-sm-2">Email Id</label>
+                <input type="Email" id="Uemail"  class="form-control" class="col-sm-6" placeholder="Enter Your active email id to recive relative jobs">
+
+
+        </div>
+<br>
+
+
+<div class="row">
+    <label for="pass" class=" right mandatory col-sm-2">Password</label>
+    <input type="Password" class="form-control col-sm-6" placeholder="Minimum-6-character" minlength="6" maxlength="40">
+    <a href=""  class="hidePwd" ng-click="togglePassword()" ng-bind="status.inputType == 'password' ? 'show' : 'hide'">show</a>
+<!--     
+    <div class="input">Looks like an input, <a href="#">but isn't</a></div> -->
+
+</div>
+
+<br>
+
+<div class="row">
+        
+    
+            
+        <div class="input-group mb-3 ">
+                <label  for="mNum" class="right mandatory col-sm-2">Mobile number</label>
+                
+                <div class="input-group-prepend ">
+                  <span class="input-group-text">91</span> 
+                  
+                </div>
+                <input type="tel" class="form-control  col-sm-6" placeholder="When recruiter can contact you"minlength="10" maxlength="10">
+              </div>   
+            
+    </div>
+
+    
+
+    <!----------------------------------------------->
+    <br>
+    <div class="row">
+            <label for="country" class="right mandatory col-sm-2">Current Location:</label>
+            <select class="form-control col-sm-6" id="sel1" placeholder="If your city is not in the list select others">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+            </select>
+    </div>
+<br>
+
+    <div class="form-check">
+            &nbsp;
+            <label class="form-check-label" class= "col-sm-2  offset-sm-1" >
+              <input type="checkbox" class="form-check-input pull-right" value="">outside india
+            </label>
+    </div>
+
+
+<br>
+<div class="row">
+    <label  for="Upload" class= "col-sm-2 " >Upload Resume</label>
+    <input type="file" class="btn btn-success " id="Upload"> 
+    <span class="inline-separator text-mute mt-2" > &nbsp; -or- &nbsp;</span>
+    <a href="" ng-click="uploader.status.resumeBox=!uploader.status.resumeBox" class="primary-link mt-2">
+        copy-paste your resume here</a>
+
+        
+</div>
+
+<div class="row">
+    <div class="col-sm-2"></div>
+            <small class="info upload-btn-text">doc, docx, rtf, pdf - 2MB max
+            <br>Naukri preferred CV format - docx file</small>
+    </div>
+<br>
+
+<div class="row">
+
+    <label for="comment" class="col-sm-2"></label>
+    <textarea class="form-control col-sm-6" rows="2" id="comment"></textarea>
+              
+</div>
+<br>
+
+<div class="row">
+    <div class="col-sm-2"></div>
+
+    <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="T&C" name="example1">
+            <label class="custom-control-label mailer-text" for="T&C">I agreed to the
+            <a href="//www.naukri.com/termsconditions#g1" ng-click="track.eventTrackGA('click','T&amp;C')" target="_blank" class="primary-link">Terms and Conditions</a>
+                governing the use of Naukri.com.</label>
+
+
+        <div class="mailer-text">I have reviewed the default
+             <a href="" class="primary-link" id="mailerTrigger" ng-click="mailerBoxInst.open();track.eventTrackGA('click','Mailer Setting')">
+                Mailer &amp; Communications settings.</a>
+        </div>   
+            
+            
+    </div>
+
+</div>
+
+<br>
+
+<div class="row">
+        <div class="col-sm-2"></div>
+            <button type="button" class="btn btn-info  btn-lg col-sm-4">Register</button>
+    </div>
+
+
+
+
+
+</div>
+

@@ -1,0 +1,82 @@
+<div class=" container jumbotron">
+
+ <h1 class="text-center text-danger">template form</h1>   
+<form #user="ngForm">
+
+    <div class="row">
+
+         <div class="col-sm-6">  
+
+
+                <div class="form-group"> 
+                    <label for="fname">First name</label>
+                    <input type="text" class="form-control" name="firstname" id="fname"ngModel>
+
+                </div> 
+        </div>    
+        
+         <div class="col-sm-6">  
+                 <div class="form-group"> 
+                        <label for="lname">last name</label>
+                        <input type="text" class="form-control" name="lastname" id="lname" ngModel>
+                
+             </div> 
+
+         </div>      
+    </div>
+<!---------------------------------------->
+
+<div class="row">
+
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="age">Age</label>
+                        <input type="number"  class="form-control "  name="Age" ngModel>
+                    </div>
+                </div>
+
+
+                <div class="col">
+                    <div class="form-group">
+                        <label for="age">D.O.B</label>
+                        <input type="date"  class="form-control"  name="date" ngModel>
+                    </div>
+
+                    
+                </div>
+
+</div>
+
+<div class="row">
+            <div class="col-sm-6">
+
+                <div class="form-group">
+                    <label for="pass">Password</label>
+                    <input type="password" class="form-control" id="pass" name="password"ngModel>
+                </div>
+
+            </div>
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label for="cnfpass"> confirm Password</label>
+                    <input type="password" class="form-control" id="cnfpass" name="confirm password" ngModel>
+                </div>
+            </div>
+
+</div>
+
+<div class="custom-control custom-checkbox">
+
+    <input type="checkbox" class="from-control-input" name="subject" ngModel>
+    <label  for="cSubjects"class="form-control-label">Remember me</label>
+
+</div>
+
+    <button type="button" class="btn btn-success"(click)="save(user.value)">submit</button>&nbsp;&nbsp;
+    <button type="reset" class="btn btn-success">Reset</button>
+
+</form>
+{{user.value|json}}
+
+</div>
+

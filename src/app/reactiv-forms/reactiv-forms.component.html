@@ -1,0 +1,25 @@
+<p>reactiv-forms works!</p>
+<div class="container jumbotron">
+<div class="text-center text-danger">Reactive-form</div>
+<form action=""[formGroup]="data" (ngSubmit)="onClick(data.value)"><br><br>
+
+<div class="row">   
+    <label for="Fname">Firstname</label>&nbsp;&nbsp;
+    <input type="text" class="form-control col-sm-5" id="Fname" formControlName="firstname">&nbsp;&nbsp;
+    <label for="lname">lastName</label>&nbsp;
+    <input type="LastName" class="form-control col-sm-5" id="lname" formControlName="lastname">
+<br><br>
+</div>
+
+<label for="Email">Email</label>
+<input type="email" class="form-control col-sm-4" id="Email" formControlName="email">
+
+<br><br>
+
+    <button type="submit" class="btn btn-success">save</button><br>
+
+</form>
+
+</div>
+<br>
+{{data.value|json}}

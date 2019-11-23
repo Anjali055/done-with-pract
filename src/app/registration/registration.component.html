@@ -1,0 +1,73 @@
+<div class="">
+<h1 class="text-center text-info">registration form</h1>
+<form #userInfo="ngForm" (ngSubmit)="saveForm(userInfo.value)">
+
+
+
+   <div class="form-group">
+        <label for="fname" >first name:</label>
+       <input type="text" id="fname" class="form-control col-sm-9" name="firstname" ngModel>
+    </div>
+
+
+<div class="col-sm-3">
+    <div class="form-group">
+            <label for="lname"class="text-light">last name:</label>
+            <input type="text" id="lname" class="form-control " name="lasttname" ngModel>
+        </div>
+</div>       
+
+    <div class="custom-control custom-radio custom-control-inline ">
+        gender:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="radio" class="custom-control-input" value="male" id="male" name="gender" ngModel>
+        <label for="male" class="custom-control-label text-light">male</label>
+    </div>
+
+    <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" class="custom-control-input" value="female" id="female" name="gender"ngModel>
+        <label for="female" class="custom-control-label text-light">female</label>
+     </div>
+<br>
+<br>
+     <div class="col-sm-3">
+
+            <select name="country" class="custom-select  "ngModel>
+                    <option value>select country</option>
+                    <option value="India">India</option>
+                    <option value="USA">USA</option>
+                    <option value="pakistan">pakistan</option>
+            </select>
+
+     </div>
+<br>
+
+     <div class="col-sm-3">
+         <div class="form-group">
+             <label for="pass"class="text-light">Password</label>
+             <input type="password" class="form-control" id="pass" name="password" ngModel>
+         </div>
+    </div>   
+     
+    <div class="col-sm-3">
+         <div class="form-group">
+             <label for="cnfpass" class="text-light"> confirm Password</label>
+             <input type="password" class="form-control" id="cnfpass" name="confirm password" ngModel>
+         </div>
+    </div>    
+    
+    
+     <div class="custom-control custom-checkbox">
+
+    <input type="checkbox" class="from-control-input" name="subject" ngModel>
+    <label  for="cSubjects"class="form-control-label text-light">Remember me</label>
+
+</div>
+
+    <button type="submit" class="btn btn-success">submit</button>&nbsp;&nbsp;
+    <button type="reset" class="btn btn-success">Reset</button>
+    
+
+</form>
+   
+
+</div>
